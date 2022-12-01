@@ -1,0 +1,24 @@
+// lo utilizo para poder reutilizar codigo
+
+// mixin con parametros
+
+@mixin medidas($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin letras($color, $tamaño){
+    color: $color;
+    font-size: $tamaño;
+}
+
+@mixin row {
+    display: row;
+    text-align: center; 
+    align-items: center;
+}
+
+@mixin tamaño-muestras {
+    width: 400px;
+    height: 150px;    
+}

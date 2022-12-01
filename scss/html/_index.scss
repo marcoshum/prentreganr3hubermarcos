@@ -1,0 +1,354 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(230,237,166,1) 0%, rgba(255,136,0,1) 100%);
+}
+
+header{
+    @include row; 
+    background-image: url(../img/pizza-redonda.jpg);
+    h1{
+        font-style: italic;  
+        color: $color-texto
+    }
+}
+
+.logo:hover{
+    box-shadow: 1px 1px  2px black;
+    transform: scale(0.88);
+}
+
+
+main{
+    .fotitos{
+        list-style: none;
+        display:flex;
+        flex-direction: row;
+        margin-left: 1em;
+        .fondo {
+            width: 500px;
+            height: 200px;
+        }
+        
+        .ciudad {
+            height: 200px;
+            width: 400px;
+        }
+        .maradona {
+            height: 200px;
+            width: 130px;
+        }
+    }
+}    
+
+.naso{
+    .napoli {
+    background-color: $color-napoli;
+    text-align: center;
+}
+    .somos{
+        background: $color-somos; ; padding:25px 35px 25px 35px ;  border-radius:0px;
+    display: flexbox;
+    text-align: center
+    }
+}
+
+.menu{
+    background-image: url(../img/490x_pizza-dia-mundial-mejores-ocu-istock.jpg);
+    ul{ display: flex;
+        flex-direction: row;
+        justify-content: center;
+       li{
+        background-color: yellow;margin: 10px;padding: 10px; border-style: solid; display: inline-block ;
+        position: relative;
+        
+       }
+    }
+}
+
+.ig{
+    background: $color-rosaig;
+    background: $color-rosaig-gradiente;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    filter: drop-shadow(2px 2px 4px);
+    margin-bottom: 1%;
+    .logoig{
+        display: block;
+        width: 9rem;
+        height: 5rem;
+        margin-bottom: -1rem;
+    }
+}
+    .ig:hover{
+        box-shadow: 1px 1px  2px black;
+        transform: scale(1.1);
+}
+
+
+.producto{
+    background-color: rgb(165, 134, 42);
+    filter: drop-shadow(5px 5px 5px);
+    display: block;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    h1{
+        color: $color-texto;
+    }
+}
+
+.item-fixed{
+    position: fixed;
+    bottom: 0;
+     right: 0;
+
+    .menuu {
+        width: 4rem;
+        height: 4rem;
+        z-index: 100;
+            }
+            .menuu:hover{
+                box-shadow: 1px 1px  2px black;
+                transform: scale(1.15);
+            }        
+}
+
+
+.partebaja{
+    display: grid;
+    display: inline-flex;
+    .pizasinfondo{
+        height: 10rem;
+                }
+    .pizasinfondo:hover{
+        transform: $rotar360;        
+        transition: 2s;
+            }
+    h3{
+        color: $color-texto;
+        font-size: 1.2rem;
+    }
+    p{
+     font-size: 1.1rem;
+    }
+}
+
+
+// productos
+.piza {
+    display: block;
+    align-content: center;
+    
+    .mooza {
+        display: inline;
+    }
+    .lamooza { 
+        @include tamaño-muestras
+        
+    }
+    .carousel-inner{
+        text-align: center;
+    }
+    
+    .napo {
+        display: inline;
+    }
+    
+    .lanapo {
+        @include tamaño-muestras
+    }
+    
+    .fuga {
+        display: inline;
+    }
+    
+    .lafuga { 
+        @include tamaño-muestras
+    }
+    
+    .jyq {
+        display: inline;
+    
+    }
+    
+    .lajym {
+        @include tamaño-muestras
+    }
+    
+    .faina {
+        display: inline;
+    }
+    
+    .lafaina {
+        @include tamaño-muestras
+    }
+}
+
+.galeria{
+    text-align: center;
+}
+
+.carousel-inner{
+    text-align: center;
+}
+
+//historia
+.fotivid{ display:flex;
+
+    .history {
+        background-image: url(../img/pergamin.jpg);
+        font-style: italic;
+    
+    }
+   /* esto lo puse en extend
+   .antigua{
+        display: inline;
+        width: 400px;
+        height: 150px;
+    }
+
+    .antigua-dos {
+        display: inline;
+        width: 400px;
+        height: 150px;
+        margin-left: 1.5rem;
+    } */
+    .videohistoria {
+        margin-left: 10px;
+        width: 400px;
+    } 
+}
+
+//pedidos
+
+.arma{
+    display: inline-flexbox;
+            border-radius: 80px;
+            background-color: #eeee22;
+            border-style: double;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: center;
+                }
+                .formulario {
+                    text-align: center;
+                    background-image: url(../img/harina.jpg);
+            margin-top: -15px;
+                }
+                .encontra{
+                    text-align: center;
+                    font-style:italic;
+                }
+                
+            
+                .rappi{
+                    width: 13rem;
+                opacity: 90%;
+                display: inline-flex;
+                align-self: center;
+                top: -5rem;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+                animation-direction: alternate-reverse;
+                animation-name: RappiAnimation;
+                }
+
+
+                /* keyframes */
+
+@keyframes RappiAnimation {
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(0.8);
+    } 
+    }
+/*pedidos */
+                .separador {
+                    z-index: 2;
+                    display: flex;
+                    justify-content: center;
+                    grid-area: Sepa;
+                    filter: drop-shadow(2px 2px 4px);
+                }
+
+
+
+/* media query */
+@media screen and (max-width:1080px){
+         
+        main{ display: grid;
+                
+                justify-content: space-around;}
+         
+                .fondo{
+                    display: none;
+                }
+                .logo{
+                    display: inline-flex;
+                }   
+                .maradona{
+                    display: none;
+                }
+                .ciudad{
+                    display: inline-flex;
+                
+                float: right
+                
+                }
+                .conjunto{
+                    display: flexbox;
+                    flex-flow: row;
+                }
+                        
+        }
+
+    /* mediaquery 2 */
+
+    @media screen and (max-width:500px){
+        .ciudad{
+            display: none;
+        }
+        .logo{
+            display: flex;
+            width: 100%;
+        }
+        .partebaja{
+            display: grid;
+        }
+        .ig{
+            margin-top: -2%;
+        }
+        
+        .piza{
+            display: grid
+        }
+    }
+
+    /*ubciación */
+    .ubi
+        {
+            grid-area: Seg;
+            margin: 2rem 0rem;
+            color: rgb(30, 28, 28);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            font-style: initial 
+        }
+
+        .buscanos{
+            grid-area: Seg;
+            margin: 2rem 0rem;
+            color: rgb(30, 28, 28);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            text-decoration: underline;
+        }
+
+        .buscanos:hover{            
+            transform: skewY(-5deg);
+            transition: 2s;
+        }

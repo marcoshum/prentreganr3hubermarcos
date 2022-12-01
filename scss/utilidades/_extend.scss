@@ -1,0 +1,16 @@
+%estilosAntigua{
+    width: 400px;
+    height: 150px;
+    display: inline; 
+}
+
+
+.antigua{
+    @extend %estilosAntigua;
+    margin-left: 1rem;
+}
+
+.antigua-dos {
+    @extend %estilosAntigua;
+    margin-left: 1.1rem;
+} 
